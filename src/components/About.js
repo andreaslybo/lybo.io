@@ -16,9 +16,6 @@ const About = () => {
                         en fascinasjon for teknologi, og det har nok bidratt til karrierevalget. Jeg er
                         en kreativ sjel med en teknisk sterk bakgrunn fra Høyskolen Kristiania, hvor jeg
                         studerer en 4-årig bachelor i intelligente systemer.
-
-                        TEST-DEPLOY
-
                         <br/><br/>Bakgrunnen min som IT-konsulent gjør at jeg klarer å se kundens behov
                             og skape verdi. Vil du vite hvordan jeg kan hjelpe deg?
                         <a href='mailto:andreas@lybo.io'>
