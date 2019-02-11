@@ -1,131 +1,134 @@
-body, html {
+body,
+html {
     margin: 0;
     color: #FFF;
     font-family: 'Oswald' sans-serif;
     overflow-x: hidden;
- }
+}
 
- /* Navigation */
- nav {
-   width: 100%;
-   height: 100px;
-   background-color: #1b1e25;
-   position: fixed;
-   z-index: 1000;
-   font-family: sans-serif;
- }
- 
- .nav-inner {
-   max-width: 1400px;
-   width: 100%;
-   margin: auto;
-   height: 100px;
-   box-sizing: border-box;
-   padding: 10px;
- }
- 
- #menu {
-   background: #1b1e25;
-   max-width: 100%;
-   width: 0px;
-   position: absolute;
-   top: 99px;
-   right: 0;
-   box-sizing: border-box;
-   transition: width 1s;
-   display: none;
-   text-indent: 100px;
- }
- 
- .openMenu {
-   display: inline-block !important;
-   width: 650px !important;
-   text-indent: 0px !important;
- }
- 
- .hamburger-close {
-   background: url(../img/hamburger-close.png) !important;
-   background-size: 75% !important;
-   background-repeat: no-repeat !important;
-   background-position: center !important;
- }
- 
- #menu ul, #menu a {
-   background: #1b1e25;
-   color: #FFF !important;
-   text-align: center;
-   font-size: 2rem;
- }
- 
- #menu li {
-   padding-bottom: 20px;
-   list-style-type: none;
-   transition: all ease-in-out 0.2s;
-   cursor: pointer;
- }
- 
- #menu li:hover {
-   color: #006fb9;
- }
- 
- #hamburger {
-   width: 80px;
-   height: 80px;
-   background: url(../img/hamburger.png);
-   background-size: 75%;
-   background-repeat: no-repeat;
-   background-position: center;
-   float: right;
-   display: block;
-   cursor: pointer;
- }
- 
- .logo {
+/* Navigation */
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: #1b1e25;
+    position: fixed;
+    z-index: 1000;
+    font-family: sans-serif;
+}
+
+.nav-inner {
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#menu {
+    background: #1b1e25;
+    max-width: 100%;
+    width: 0;
+    position: absolute;
+    top: 99px;
+    right: 0;
+    box-sizing: border-box;
+    transition: width 1s;
+    display: none;
+    text-indent: 100px;
+}
+
+.openMenu {
+    display: inline-block !important;
+    width: 650px !important;
+    text-indent: 0 !important;
+}
+
+.hamburger-close {
+    background: url("../img/hamburger-close.png") !important;
+    background-size: 75% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+#menu a,
+#menu ul {
+    background: #1b1e25;
+    color: #FFF !important;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#menu li {
+    padding-bottom: 20px;
+    list-style-type: none;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+#menu li:hover {
+    color: #006fb9;
+}
+
+#hamburger {
+    width: 80px;
+    height: 80px;
+    background: url("../img/hamburger.png");
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+    display: block;
+    cursor: pointer;
+}
+
+.logo {
     margin-top: 8px;
-   display: inline-block;
-   height: 60px;
-   width: 70px;
-   text-align: center;
-   background: url(../img/logo.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
- }
- a {
-   text-decoration: none;
- }
- #main-1-text-container a {
+    display: inline-block;
+    height: 60px;
+    width: 70px;
+    text-align: center;
+    background: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+a {
     text-decoration: none;
- }
- .about-me {
+}
+#main-1-text-container a {
+    text-decoration: none;
+}
+.about-me {
     display: inline-block;
     padding: 7px 25px;
     text-align: center;
     line-height: 40px;
     background: linear-gradient(to right, #9F1D19, #F7106A);
     border-radius: 2px;
-    font-size: 0.5em;
+    font-size: 1rem;
     text-decoration: none !important;
     color: #FFF !important;
     font: 'Open Sans';
     transition: 0.4s;
- }
- .about-me:hover {
+    cursor: pointer;
+}
+.about-me:hover {
     background: linear-gradient(to left, #9F1D19, #F7106A);
- }
- 
- /* First page */
- #main-1 {
+}
+
+/* First page */
+#main-1 {
     width: 100%;
     height: 100vh;
     background-color: #1b1e25;
-    background-image: url(../img/main-1-bg.jpg);
+    background-image: url("../img/main-1-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: 40%;
- }
- #main-1-fadein {
+}
+#main-1-fadein {
     width: 100%;
     height: 100vh;
     z-index: 900;
@@ -133,41 +136,40 @@ body, html {
     position: absolute;
     animation: fadeIn 1s ease-in-out 1s;
     animation-fill-mode: forwards;
- }
- #mouse-down {
+}
+#mouse-down {
     width: 48px;
     height: 111px;
     position: absolute;
     bottom: 20px;
     left: 50%;
     margin-left: -48px;
-    background-image: url(../img/ico-mouse.png);
+    background-image: url("../img/ico-mouse.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px 55px;
     transition: ease 0.4s;
- }
- #mouse-down:hover {
+}
+#mouse-down:hover {
     bottom: 40px;
     transform: scale(1.2);
- }
- h1 {
+}
+h1 {
     font-weight: 400;
- }
- @keyframes fadeIn {
+}
+@keyframes fadeIn {
     0% {
-       width: 100%;
+        width: 100%;
     }
     100% {
-       width: 0%;
+        width: 0;
     }
- }
- @keyframes underline {
+}
+@keyframes underline {
     0% {
- 
-    }
- }
- #beta {
+        }
+}
+#beta {
     width: 100px;
     height: 100px;
     background: red;
@@ -175,16 +177,16 @@ body, html {
     font-family: sans-serif;
     text-align: center;
     line-height: 100px;
- }
- #main-1-bg {
+}
+#main-1-bg {
     width: 800px;
     height: 566px;
     margin: auto;
-    background-image: url(../img/main-1-bg.jpg);
+    background-image: url("../img/main-1-bg.jpg");
     background-size: 660px 566px;
     z-index: 1;
- }
- #main-1-text-container {
+}
+#main-1-text-container {
     width: 50%;
     height: 200px;
     margin: auto;
@@ -192,29 +194,29 @@ body, html {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 2vw;
- }
- .top {
+}
+.top {
     font-family: 'Rokkitt' !important;
     font-weight: 300;
     font-style: italic;
     margin: 0;
     padding: 0;
- }
- #main-1-text-container h1 {
+}
+#main-1-text-container h1 {
     font-size: 3em;
     margin: 0;
     padding: 0;
- }
- 
- /* Second page */
- #about-me {
+}
+
+/* Second page */
+#about-me {
     width: 100%;
     min-height: 100vh;
     background: #FFF;
     display: flex;
     align-items: center;
- }
- #about-me-inner-right {
+}
+#about-me-inner-right {
     font-family: 'Open Sans', sans-serif;
     width: 50%;
     min-height: 100vh;
@@ -222,12 +224,13 @@ body, html {
     color: #1b1e25;
     background-color: #FFF;
     font-weight: 400;
- }
- #about-me-inner-right, #work-main li {
+}
+#about-me-inner-right,
+#work-main li {
     list-style: square;
     font-family: 'Open Sans', sans-serif;
- }
- #about-me-inner-box {
+}
+#about-me-inner-box {
     width: 90%;
     display: block;
     min-height: 90vh;
@@ -236,8 +239,8 @@ body, html {
     padding: 3vw;
     z-index: 10;
     font-size: 1.2rem;
- }
- .work {
+}
+.work {
     display: inline-block;
     padding: 7px 25px;
     text-align: center;
@@ -249,11 +252,11 @@ body, html {
     color: #FFF !important;
     font: 'Open Sans';
     transition: 0.4s;
- }
- .work:hover {
+}
+.work:hover {
     background: #BD3D3D;
- }
- #me {
+}
+#me {
     width: 100%;
     height: 50vh;
     background-position: center;
@@ -262,26 +265,26 @@ body, html {
     overflow: hidden;
     object-fit: cover;
     object-position: bottom;
- }
- #about-me-inner-box a {
+}
+#about-me-inner-box a {
     color: #e1484f;
     font-family: 'Rokkitt', sans-serif;
     font-size: 1vw;
     text-decoration: none;
- }
- #about-me-inner-right h1 {
+}
+#about-me-inner-right h1 {
     font-weight: 400;
     border-bottom: 3px solid #1b1e25;
- }
- #about-me-inner-right p {
+}
+#about-me-inner-right p {
     font-family: 'Montserrat', sans-serif;
- }
- #about-me-inner-left {
+}
+#about-me-inner-left {
     width: 50%;
     height: 100vh;
     float: left;
     background-color: #e1484f;
-    background-image: url(../img/about.png);
+    background-image: url("../img/about.png");
     background-repeat: no-repeat;
     background-size: 315px 150px;
     background-position: center;
@@ -289,33 +292,33 @@ body, html {
     line-height: 100vh;
     font-family: 'Vibur', cursive;
     font-size: 4vw;
- }
- .lang {
+}
+.lang {
     width: 24px;
     height: 24px;
-    background: url(../img/lang.png);
+    background: url("../img/lang.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: 17px;
     float: left;
     border: 0;
- }
- .lang:hover {
+}
+.lang:hover {
     /*background: url(../img/lang-2.png);*/
- }
- .bolder {
+}
+.bolder {
     font-weight: 800;
- }
- 
- /* Work and Education */
- #work-main {
+}
+
+/* Work and Education */
+#work-main {
     width: 100%;
     background: #F1EDED;
     box-sizing: border-box;
     padding: 5%;
- }
- #work-main h1 {
+}
+#work-main h1 {
     text-align: center;
     margin: 0 !important;
     color: #000;
@@ -323,46 +326,47 @@ body, html {
     font-size: 2rem;
     padding-bottom: 2.5%;
     font-weight: bold;
- }
- #work-buttons {
+}
+#work-buttons {
     max-width: 600px;
     height: 60px;
     margin: auto;
     font-family: 'Open Sans', sans-serif;
     line-height: 55px;
- }
- #work-buttons a {
+}
+#work-buttons a {
     text-decoration: none;
- }
- #work-container {
+}
+#work-container {
     width: 100%;
     max-height: 750px;
     margin: 50px auto;
- }
- .work-education {
+}
+.work-education {
     width: 100%;
     height: 60vh;
     box-sizing: border-box;
- }
- 
- /* Education */
- #education-left {
+}
+
+/* Education */
+#education-left {
     width: 50%;
     height: calc(60vh - 3px);
     float: left;
-    background: url(../img/westerdals.jpg);
+    background: url("../img/westerdals.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0px 35px;
+    padding: 0 35px;
     box-sizing: border-box;
- }
- #education-left h1, h3 {
+}
+#education-left h1,
+h3 {
     text-align: center;
- }
- #education-right p {
+}
+#education-right p {
     font-size: 1.3rem;
- }
- .degree {
+}
+.degree {
     width: 100%;
     height: 75px;
     text-align: center;
@@ -373,71 +377,71 @@ body, html {
     text-decoration: none;
     float: left;
     font-family: 'Open Sans', sans-serif;
- }
- .degree:hover {
+}
+.degree:hover {
     background: #213140;
- }
- #education-right {
+}
+#education-right {
     width: 50%;
     height: calc(60vh - 3px);
     float: left;
     box-sizing: border-box;
-    padding: 0px 35px;
+    padding: 0 35px;
     color: #000;
     font-family: 'Open Sans', sans-serif;
- }
- #education-plan {
+}
+#education-plan {
     width: 100%;
     height: 30vh;
     background: grey;
- }
- .education-plan-item {
+}
+.education-plan-item {
     width: 25%;
     height: 10vh;
     float: left;
     text-align: center;
     line-height: 10vh;
     background: red;
- }
- .thesis {
+}
+.thesis {
     width: 75% !important;
- }
- /* Work */
- #work-right {
+}
+/* Work */
+#work-right {
     width: 50%;
     height: calc(60vh - 3px);
     float: left;
-    background: url(../img/work-it.jpeg);
+    background: url("../img/work-it.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
- }
- #work-left h1 {
+}
+#work-left h1 {
     text-align: center;
- }
- #work-left {
+}
+#work-left {
     width: 50%;
     height: calc(60vh - 3px);
     float: left;
     box-sizing: border-box;
-    padding: 0px 35px;
+    padding: 0 35px;
     color: #242424;
- }
- #work-left li {
+}
+#work-left li {
     font-size: 1vw;
- }
- .we-button {
+}
+.we-button {
     color: #242424;
     font-weight: bold;
- }
- .we-button:hover {
+}
+.we-button:hover {
     background: #2b3e50;
     color: #FFF;
- }
- .selected {
+}
+.selected {
     color: #FFF !important;
     background: #2b3e50;
- }
- .button-work {
+}
+.button-work {
     width: 45%;
     height: 60px;
     text-align: center;
@@ -445,8 +449,8 @@ body, html {
     box-sizing: border-box;
     margin: 5px;
     border: 3px solid #2b3e50;
- }
- .button-education {
+}
+.button-education {
     width: 45%;
     height: 60px;
     text-align: center;
@@ -454,21 +458,21 @@ body, html {
     box-sizing: border-box;
     margin: 5px;
     border: 3px solid #2b3e50;
- }
- 
- /* Contact page */
- #main-contact {
+}
+
+/* Contact page */
+#main-contact {
     width: 100%;
     height: 50vh;
     background: #1b1e25;
     display: flex;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
- }
- #main-contact h1 {
+}
+#main-contact h1 {
     text-align: center;
- }
- #contact-help {
+}
+#contact-help {
     width: 100%;
     height: 65px;
     text-align: center;
@@ -476,8 +480,8 @@ body, html {
     float: left;
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
- }
- textarea {
+}
+textarea {
     width: 100%;
     height: 200px;
     border: 2px solid #FFF;
@@ -490,20 +494,20 @@ body, html {
     font-family: sans-serif;
     margin-top: 50px;
     resize: none;
- }
- input[type="submit"] {
+}
+input[type="submit"] {
     width: 100%;
     height: 75px;
     border: 2px solid #FFF;
     line-height: -50px;
     margin-top: 25px;
- }
- input[type="submit"]:hover {
+}
+input[type="submit"]:hover {
     background: #FFF;
     color: #1b1e25;
     border: 2px solid #FFF;
- }
- input {
+}
+input {
     border: 0;
     background: #1b1e25;
     border-bottom: 2px solid #FFF;
@@ -512,23 +516,23 @@ body, html {
     box-sizing: border-box;
     padding: 20px;
     color: #FFF;
- }
- input[type="textfield"] {
+}
+input[type="textfield"] {
     width: 100%;
     height: 50px;
     margin-bottom: 30px;
- }
- input[type="email"] {
+}
+input[type="email"] {
     width: 45%;
     height: 50px;
     float: left;
- }
- input[type="tel"] {
+}
+input[type="tel"] {
     width: 45%;
     height: 50px;
     float: right;
- }
- #main-contact-form {
+}
+#main-contact-form {
     max-width: 1440px;
     max-height: 700px;
     width: 80%;
@@ -537,227 +541,272 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
- }
- .btn-bot {
+}
+.btn-bot {
     width: 100px;
     height: 100px;
     display: block;
     background: white;
     background-size: cover;
- }
- .btn-bot:hover {
+}
+.btn-bot:hover {
     opacity: 0.8;
- }
- .linkedin { background-image: url(../img/linkedin.jpg); }
- .github { background-image: url(../img/github.jpg); }
- .email { background-image: url(../img/mail.jpg); }
- .scroll-button {
+}
+.linkedin {
+    background-image: url("../img/linkedin.jpg");
+}
+.github {
+    background-image: url("../img/github.jpg");
+}
+.email {
+    background-image: url("../img/mail.jpg");
+}
+.scroll-button {
     width: 100px;
     height: 100px;
     background-color: #1b1e25;
-    background-image: url(../img/ico-scroll.png);
+    background-image: url("../img/ico-scroll.png");
     background-repeat: no-repeat;
     background-position: 30px 50px;
     background-size: 39px 24px;
     border-radius: 50%;
-    margin: auto;
-    margin-top: -50px;
- }
-
+    margin: -50px auto auto;
+}
 
 /* Contact Form */
 .contact-form {
-   width: 100%;
-   min-height: 50vh;
-   background: #1b1e25;
-   margin: 0;
-   box-sizing: border-box;
-   padding: 2.5%;
-   margin: auto;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    width: 100%;
+    min-height: 50vh;
+    background: #1b1e25;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 2.5%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contact-form-container {
-   max-width: 75%;
-   margin: auto;
+    max-width: 75%;
+    margin: auto;
 }
 .contact-form-container h1 {
-   text-align: center;
+    text-align: center;
 }
 .email-name-section {
-   width: 100%;
-   float: left;
+    width: 100%;
+    float: left;
 }
 .contact-form-spacer {
-   width: 10%;
-   height: 50px;
-   float: left;
+    width: 10%;
+    height: 50px;
+    float: left;
 }
 .message-section {
-   width: 100%;
+    width: 100%;
 }
 .right {
-   float: right;
+    float: right;
 }
 .contact-form h1 {
-   margin: 0;
-   padding: 0;
-   font-family: sans-serif;
-   color: #696969;
-   padding: 5%;
-   font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #696969;
+    padding: 5%;
+    font-size: 1.5rem;
 }
 .contact-form input {
-   width: 45%;
-   height: 50px;
-   border: none;
-   border-bottom: 2px solid #696969;
+    width: 45%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #696969;
 }
 .contact-form textarea {
-   border: none;
-   height: 100px;
-   border-bottom: 2px solid #696969;
+    border: none;
+    height: 100px;
+    border-bottom: 2px solid #696969;
 }
 .contact-btn {
-   width: 100%;
-   height: 50px;
-   background: none;
-   border: 2px solid #696969;
-   color: #FFF;
-   text-align: center;
-   margin-top: 10px;
-   border-radius: 5px;
-   color: #696969;
-   font-weight: bold;
+    width: 100%;
+    height: 50px;
+    background: none;
+    border: 2px solid #696969;
+    color: #FFF;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #696969;
+    font-weight: bold;
 }
 .contact-btn:hover {
-   background: #696969;
-   color: #FFF;
+    background: #696969;
+    color: #FFF;
 }
 
- /* Fix for top background */
- @media only screen and (max-width: 1200px) {
+/* Fix for top background */
+@media only screen and (max-width: 1200px) {
     #main-1 {
-       background-attachment: fixed;
+        background-attachment: fixed;
     }
-    #about-me-inner-box p, #about-me-inner-box ul, #about-me-inner-box li, #about-me-inner-box a, #about-me-inner-box b, .work-main {
-       font-size: 1.3rem !important;
+    #about-me-inner-box a,
+    #about-me-inner-box b,
+    #about-me-inner-box li,
+    #about-me-inner-box p,
+    #about-me-inner-box ul,
+    .work-main {
+        font-size: 1.3rem !important;
     }
-    #work-container h3, #work-container p, #work-container a, #work-container ul, #work-container li{
-       font-size: 1.3rem !important;
+    #work-container a,
+    #work-container h3,
+    #work-container li,
+    #work-container p,
+    #work-container ul {
+        font-size: 1.3rem !important;
     }
-    #education-right p, #education-right h1, #education-right h3, #education-right a {
-       font-size: 1.3rem;
+    #education-right a,
+    #education-right h1,
+    #education-right h3,
+    #education-right p {
+        font-size: 1.3rem;
     }
- }
- /* Desktop small */
- @media only screen and (max-width: 767px) {
-    #about-me-inner-box p, #about-me-inner-box ul, #about-me-inner-box li, #about-me-inner-box a, #about-me-inner-box b, .work-main {
-       font-size: 1.4rem !important;
+}
+/* Desktop small */
+@media only screen and (max-width: 767px) {
+    #about-me-inner-box a,
+    #about-me-inner-box b,
+    #about-me-inner-box li,
+    #about-me-inner-box p,
+    #about-me-inner-box ul,
+    .work-main {
+        font-size: 1.4rem !important;
     }
- }
- /* Mobile small */
- @media only screen and (max-device-width: 767px) {
-    #about-me-inner-box p, #about-me-inner-box ul, #about-me-inner-box li, #about-me-inner-box a, #about-me-inner-box b, .work-main {
-       font-size: 1.3rem !important;
+}
+/* Mobile small */
+@media only screen and (max-device-width: 767px) {
+    #about-me-inner-box a,
+    #about-me-inner-box b,
+    #about-me-inner-box li,
+    #about-me-inner-box p,
+    #about-me-inner-box ul,
+    .work-main {
+        font-size: 1.3rem !important;
     }
     #menu ul li {
-       font-size: 4rem !important;
+        font-size: 4rem !important;
     }
     #menu {
-      top: 198px;
-      width: 100% !important;
-      left: 0;
-      text-align: center !important;
-      font-size: 2rem !important;
+        top: 198px;
+        width: 100% !important;
+        left: 0;
+        text-align: center !important;
+        font-size: 2rem !important;
     }
- 
-    nav, .nav-inner {
-      width: 100%;
-      z-index: 100;
+
+    .nav-inner,
+    nav {
+        width: 100%;
+        z-index: 100;
     }
- }
- @media only screen and (max-device-width: 1024px) {
-    #work-container h3, #work-container p, #work-container a, #work-container ul, #work-container li{
-       font-size: 1.3rem !important;
+}
+@media only screen and (max-device-width: 1024px) {
+    #work-container a,
+    #work-container h3,
+    #work-container li,
+    #work-container p,
+    #work-container ul {
+        font-size: 1.3rem !important;
     }
- }
- @media only screen and (max-width: 1024px) {
-    nav, .inner-nav {
-       height: 200px;
+}
+@media only screen and (max-width: 1024px) {
+    .inner-nav,
+    nav {
+        height: 200px;
     }
     .logo {
-       width: 140px;
-       height: 120px;
-       margin-top: 20px;
-       margin-left: 20px;
+        width: 140px;
+        height: 120px;
+        margin-top: 20px;
+        margin-left: 20px;
     }
-    #hamburger, .hamburger-close {
-       width: 160px;
-       height: 160px;
-       background-repeat: no-repeat;
+    #hamburger,
+    .hamburger-close {
+        width: 160px;
+        height: 160px;
+        background-repeat: no-repeat;
     }
     #work-main {
-       width: 100%;
-       overflow: hidden;
-       box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
     }
-    #about-me-inner-box p, #about-me-inner-box ul, #about-me-inner-box li, #about-me-inner-box a, #about-me-inner-box b, .work-main {
-       font-size: 1.3rem;
+    #about-me-inner-box a,
+    #about-me-inner-box b,
+    #about-me-inner-box li,
+    #about-me-inner-box p,
+    #about-me-inner-box ul,
+    .work-main {
+        font-size: 1.3rem;
     }
     #main-1-text-container {
-       width: 80%;
+        width: 80%;
     }
     #about-me-inner-left {
-       display: none;
+        display: none;
     }
     #about-me-inner-right {
-       width: 100%;
+        width: 100%;
     }
     #mouse-down {
-       transform: scale(2.0);
+        transform: scale(2.0);
     }
     .top {
-       font-size: 1.2em;
+        font-size: 1.2em;
     }
     .about-me {
-       width: 200px;
-       height: 75px;
-       line-height: 75px;
-       font-size: 3vw;
+        width: 200px;
+        height: 75px;
+        line-height: 75px;
+        font-size: 3vw;
     }
     /* Top text */
     #main-1-text-container {
-       font-size: 3.5vw;
+        font-size: 3.5vw;
     }
- 
+
     /* Education */
-    #work-container h3, #work-container p, #work-container a, #work-container ul, #work-container li{
-       font-size: 1.3rem;
+    #work-container a,
+    #work-container h3,
+    #work-container li,
+    #work-container p,
+    #work-container ul {
+        font-size: 1.3rem;
     }
-    #work-container h1, #work-main h1 {
-       font-size: 2.5rem;
+    #work-container h1,
+    #work-main h1 {
+        font-size: 2.5rem;
     }
     #work-main h1 {
-       padding-bottom: 5%;
+        padding-bottom: 5%;
     }
     #education-left {
-       display: none;
+        display: none;
     }
     #education-right {
-       width: 100%;
+        width: 100%;
     }
-    #education-right p, #education-right h1, #education-right h3, #education-right a {
-       font-size: 2.5rem;
+    #education-right a,
+    #education-right h1,
+    #education-right h3,
+    #education-right p {
+        font-size: 2.5rem;
     }
- 
+
     /* Work */
     #work-right {
-       display: none;
+        display: none;
     }
     #work-left {
-       width: 100%;
+        width: 100%;
     }
- }
- 
+}

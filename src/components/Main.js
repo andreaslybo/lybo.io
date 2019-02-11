@@ -15,7 +15,9 @@ const Main = () => {
                         <a className="bolder"> LYBO</a>
                     </h1>
                     <p className="top">Fullstack Utvikler</p>
-                    <Link offset={-100} smooth={true} to="about-me"></Link>
+                    <Link offset={-100} smooth={true} to="about-me">
+                        <p className="about-me">Tjenester</p>
+                    </Link>
                 </div>
 
                 <div className="shape circle"></div>
