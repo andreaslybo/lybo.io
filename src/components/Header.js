@@ -8,12 +8,11 @@ class Header extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { clicked: false };
+        this.state = { menuOpen: false };
     }
 
     handleClick = () => {
-        this.setState({ clicked: !this.state.clicked });
-        console.log(this.state.clicked);
+        console.log(this.state.menuOpen);
     }
 
     render() {
