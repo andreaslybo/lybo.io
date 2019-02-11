@@ -49,7 +49,7 @@ class Work extends React.Component {
                                 <li>2014 - 2015: Operativ vaktsoldat og sambandsmann i Hans Majestet Kongens Garde.</li>
                                 <p></p>
                             </ul>
-                            <a href="https://www.linkedin.com/in/andreas-lybo-374754106/" class="degree">Les mer på linkedin</a>
+                            <a href="https://www.linkedin.com/in/andreas-lybo-374754106/" className="degree">Les mer på linkedin</a>
                         </div>
                         <div id="work-right"></div>
                     </div>

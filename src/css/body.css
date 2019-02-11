@@ -209,7 +209,7 @@ body, html {
  /* Second page */
  #about-me {
     width: 100%;
-    max-height: 100vh;
+    min-height: 100vh;
     background: #FFF;
     display: flex;
     align-items: center;
@@ -217,7 +217,7 @@ body, html {
  #about-me-inner-right {
     font-family: 'Open Sans', sans-serif;
     width: 50%;
-    max-height: 100vh;
+    min-height: 100vh;
     float: left;
     color: #1b1e25;
     background-color: #FFF;
@@ -230,8 +230,8 @@ body, html {
  #about-me-inner-box {
     width: 90%;
     display: block;
-    max-height: 90vh;
-    margin: 5vh auto;
+    min-height: 90vh;
+    margin: auto;
     box-sizing: border-box;
     padding: 3vw;
     z-index: 10;
@@ -311,7 +311,6 @@ body, html {
  /* Work and Education */
  #work-main {
     width: 100%;
-    max-height: 100vh;
     background: #F1EDED;
     box-sizing: border-box;
     padding: 5%;
@@ -326,7 +325,7 @@ body, html {
     font-weight: bold;
  }
  #work-buttons {
-    width: 600px;
+    max-width: 600px;
     height: 60px;
     margin: auto;
     font-family: 'Open Sans', sans-serif;
@@ -439,7 +438,7 @@ body, html {
     background: #2b3e50;
  }
  .button-work {
-    width: 290px;
+    width: 45%;
     height: 60px;
     text-align: center;
     float: left;
@@ -448,7 +447,7 @@ body, html {
     border: 3px solid #2b3e50;
  }
  .button-education {
-    width: 290px;
+    width: 45%;
     height: 60px;
     text-align: center;
     float: left;
@@ -564,6 +563,79 @@ body, html {
     margin: auto;
     margin-top: -50px;
  }
+
+
+/* Contact Form */
+.contact-form {
+   width: 100%;
+   min-height: 50vh;
+   background: #1b1e25;
+   margin: 0;
+   box-sizing: border-box;
+   padding: 2.5%;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.contact-form-container {
+   max-width: 75%;
+   margin: auto;
+}
+.contact-form-container h1 {
+   text-align: center;
+}
+.email-name-section {
+   width: 100%;
+   float: left;
+}
+.contact-form-spacer {
+   width: 10%;
+   height: 50px;
+   float: left;
+}
+.message-section {
+   width: 100%;
+}
+.right {
+   float: right;
+}
+.contact-form h1 {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   color: #696969;
+   padding: 5%;
+   font-size: 1.5rem;
+}
+.contact-form input {
+   width: 45%;
+   height: 50px;
+   border: none;
+   border-bottom: 2px solid #696969;
+}
+.contact-form textarea {
+   border: none;
+   height: 100px;
+   border-bottom: 2px solid #696969;
+}
+.contact-btn {
+   width: 100%;
+   height: 50px;
+   background: none;
+   border: 2px solid #696969;
+   color: #FFF;
+   text-align: center;
+   margin-top: 10px;
+   border-radius: 5px;
+   color: #696969;
+   font-weight: bold;
+}
+.contact-btn:hover {
+   background: #696969;
+   color: #FFF;
+}
+
  /* Fix for top background */
  @media only screen and (max-width: 1200px) {
     #main-1 {
@@ -588,7 +660,7 @@ body, html {
  /* Mobile small */
  @media only screen and (max-device-width: 767px) {
     #about-me-inner-box p, #about-me-inner-box ul, #about-me-inner-box li, #about-me-inner-box a, #about-me-inner-box b, .work-main {
-       font-size: 2.5rem !important;
+       font-size: 1.3rem !important;
     }
     #menu ul li {
        font-size: 4rem !important;
@@ -608,7 +680,7 @@ body, html {
  }
  @media only screen and (max-device-width: 1024px) {
     #work-container h3, #work-container p, #work-container a, #work-container ul, #work-container li{
-       font-size: 2.5rem !important;
+       font-size: 1.3rem !important;
     }
  }
  @media only screen and (max-width: 1024px) {

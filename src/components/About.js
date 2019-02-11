@@ -19,7 +19,7 @@ const About = () => {
                         <br/><br/>Bakgrunnen min som IT-konsulent gjør at jeg klarer å se kundens behov
                             og skape verdi. Vil du vite hvordan jeg kan hjelpe deg?
                         <a href='mailto:andreas@lybo.io'>
-                            <b>Ta kontakt :)</b>
+                            <br/><b>Ta kontakt :)</b>
                         </a>
                     </p>
 
@@ -37,9 +37,6 @@ const About = () => {
                         <li>Express.js</li>
                         <li>Og flere...</li>
                     </ul>
-                    <Link smooth={true} offset={-100} to="work-main">
-                        <div style={{display: "cursor"}} className='work-main'>Jobb og utdanning &#x2192;</div>
-                    </Link>
                 </div>
             </div>
         </div>

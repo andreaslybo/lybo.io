@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import About from './components/About';
 import Work from './components/Work';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
 import './css/body.css';
