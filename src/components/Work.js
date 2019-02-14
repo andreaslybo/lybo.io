@@ -64,16 +64,14 @@ class Work extends React.Component {
             return (
                 <div>
                     <a className="we-button button-education" onClick={this.changeWorkEducation}>Utdanning</a>
-                    <a
-                        className="we-button button-work selected"
+                    <a className="we-button button-work selected"
                         onClick={this.changeWorkEducation}>Jobb</a>
                 </div>
             );
         } else {
             return (
                 <div>
-                    <a
-                        className="we-button button-education selected"
+                    <a className="we-button button-education selected"
                         onClick={this.changeWorkEducation}>Utdanning</a>
                     <a className="we-button button-work" onClick={this.changeWorkEducation}>Jobb</a>
                 </div>

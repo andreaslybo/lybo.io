@@ -2,7 +2,7 @@ import React from 'react';
 import {slide as Menu} from 'react-burger-menu';
 import menuStyling from '../css/menuStyle.css';
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 class Header extends React.Component {
 

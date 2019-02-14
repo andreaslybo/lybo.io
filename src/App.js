@@ -18,7 +18,6 @@ const App = () => {
             <Main/>
             <About/>
             <Work/>
-            <ContactForm/>
             <Footer/>
         </div>
     );
