@@ -14,9 +14,9 @@ const Main = () => {
                     <h1 id="headline">Andreas
                         <a className="bolder"> LYBO</a>
                     </h1>
-                    <p className="top">Fullstack Utvikler</p>
+                    <p className="top">Systemutvikler</p>
                     <Link offset={-100} smooth={true} to="about-me">
-                        <p className="about-me">Tjenester</p>
+                        <p className="about-me">Om meg</p>
                     </Link>
                 </div>
 

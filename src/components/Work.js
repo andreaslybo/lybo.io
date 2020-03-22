@@ -31,7 +31,7 @@ class Work extends React.Component {
                                 sammenhenger i gjøremål innen forbrukerteknologi og områder som mobil-betaling,
                                 helse, trafikk, sikkerhet og overvåkning.</p>
                             <a
-                                href="https://www.westerdals.no/en/programme/intelligent-systems/"
+                                href="https://www.kristiania.no/studier/bachelor/informasjonsteknologi-intelligente-systemer/"
                                 className="degree">Les mer om studiet mitt</a>
                         </div>
                     </div>
@@ -43,13 +43,14 @@ class Work extends React.Component {
                     <div className="work-education" id="work">
                         <div id="work-left">
                             <ul>
-                                <li>Aug 2018: Solution Developer i Avanade Norway.</li>
+                                <li>2019 - d.d: Systemutvikler i Millum AS</li>
+                                <li>2018 - 2019: Solution Developer i Avanade Norway.</li>
                                 <li>2018 - 2018: Studentveileder i informasjonssikkerhet og webprosjekt.</li>
                                 <li>2017 - 2018: Studentveileder i introduksjon til OOP og kreativt webprosjekt.</li>
                                 <li>2014 - 2015: Operativ vaktsoldat og sambandsmann i Hans Majestet Kongens Garde.</li>
                                 <p></p>
                             </ul>
-                            <a href="https://www.linkedin.com/in/andreas-lybo-374754106/" className="degree">Les mer på linkedin</a>
+                            <a href="https://www.linkedin.com/in/andreas-lybo-374754106/" className="degree">Les mer på LinkedIn</a>
                         </div>
                         <div id="work-right"></div>
                     </div>
